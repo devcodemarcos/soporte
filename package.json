@@ -1,0 +1,26 @@
+{
+  "name": "websoporte",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000s\u0000o\u0000p\u0000o\u0000r\u0000t\u0000e\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devcodemarcos/soporte.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devcodemarcos/soporte/issues"
+  },
+  "homepage": "https://github.com/devcodemarcos/soporte#readme",
+  "dependencies": {
+    "autoprefixer": "^10.2.6",
+    "compass-mixins": "^0.12.10",
+    "postcss": "^8.3.2",
+    "tailwindcss": "^2.1.4"
+  }
+}
