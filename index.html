@@ -31,10 +31,12 @@
 	<header class="">
 		<div class="p-8 container mx-auto flex flex-wrap items-center justify-between">
 			<!-- <a href="/" class="mb-6 md:mb-0 w-full text-center md:text-left md:w-auto font-display font-black text-3xl text-black uppercase text-pixel">Soportec</a> -->
-			<a href="/" class="mb-6 md:mb-0 w-full text-center md:text-left md:w-auto font-display font-black text-3xl uppercase text-green-500 text-pixel">Soportec</a>
+			<a href="/"
+				class="mb-6 md:mb-0 w-full text-center md:text-left md:w-auto font-display font-black text-3xl uppercase text-green-500 text-pixel">Soportec</a>
 			<ul class="justify-center md:justify-end flex-1 flex list-reset">
 				<li class="ml-6">
-					<a href="#" class="text-base py-3 px-6 text-green-500 border-4 border-dotted border-green-500">Contacto</a>
+					<a href="#" class="text-base py-3 px-6 text-green-500 border-4 border-dotted border-green-500"
+						onclick="openModal('main-modal')">Contacto</a>
 				</li>
 			</ul>
 		</div>
@@ -84,7 +86,8 @@
 			<a href="#">
 				<img src="./images/code1.gif" class="w-full h-64 object-cover mb-6" />
 			</a>
-			<h3 class="text-2xl uppercase font-display font-extrabold tracking-widest mb-2 text-pixel text-green-500">Hardware</h3>
+			<h3 class="text-2xl uppercase font-display font-extrabold tracking-widest mb-2 text-pixel text-green-500">
+				Hardware</h3>
 			<p class="text-sm text-gray-500 mb-4">
 				Mantenimiento a componentes internos y externos del equipo de computo, cambios de componentes dañados y
 				contización de componentes
@@ -98,7 +101,8 @@
 			<a href="#">
 				<img src="./images/code2.gif" class="w-full h-64 object-cover mb-6" />
 			</a>
-			<h3 class="text-2xl uppercase font-display font-extrabold tracking-widest mb-2 text-pixel text-green-500">Software</h3>
+			<h3 class="text-2xl uppercase font-display font-extrabold tracking-widest mb-2 text-pixel text-green-500">
+				Software</h3>
 			<p class="text-sm text-gray-500 mb-4">
 				Formateo del equipo de computo, instalación de sistemas operativos (Windows, Linux, Mac), respaldo de
 				información e instalación de software de ofimática
@@ -113,7 +117,8 @@
 			<a href="#">
 				<img src="./images/code3.gif" class="w-full h-64 object-cover mb-6" />
 			</a>
-			<h3 class="text-2xl uppercase font-display font-extrabold tracking-widest mb-2 text-pixel text-green-500">Leica Camera</h3>
+			<h3 class="text-2xl uppercase font-display font-extrabold tracking-widest mb-2 text-pixel text-green-500">
+				Leica Camera</h3>
 			<p class="text-sm text-gray-500 mb-4">
 				Eros in cursus turpis massa tincidunt dui ut ornare. Vestibulum morbi
 				blandit cursus risus at ultrices mi. Augue ut lectus arcu bibendum at varius.
@@ -125,6 +130,83 @@
 
 	</div>
 
+
+
+	<!-- This example requires Tailwind CSS v2.0+ -->
+	<div class="main-modal fixed z-10 inset-0 overflow-y-auto" aria-labelledby="modal-title" role="dialog"
+		aria-modal="true">
+		<div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+			<!--
+		Background overlay, show/hide based on modal state.
+  
+		Entering: "ease-out duration-300"
+		  From: "opacity-0"
+		  To: "opacity-100"
+		Leaving: "ease-in duration-200"
+		  From: "opacity-100"
+		  To: "opacity-0"
+	  -->
+			<div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+
+			<!-- This element is to trick the browser into centering the modal contents. -->
+			<span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+
+			<!--
+		Modal panel, show/hide based on modal state.
+  
+		Entering: "ease-out duration-300"
+		  From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+		  To: "opacity-100 translate-y-0 sm:scale-100"
+		Leaving: "ease-in duration-200"
+		  From: "opacity-100 translate-y-0 sm:scale-100"
+		  To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+	  -->
+			<div
+				class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+				<div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+					<div class="sm:flex sm:items-start">
+						<div
+							class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-green-100 sm:mx-0 sm:h-10 sm:w-10">
+							<!-- Heroicon name: outline/exclamation -->
+							<!-- <svg class="h-6 w-6 text-red-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+								viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+							</svg> -->
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none"
+								viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+							</svg>
+						</div>
+						<div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+							<h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">
+								Formas de contacto
+							</h3>
+							<div class="mt-2">
+								<p class="text-sm text-gray-500">
+									Are you sure you want to deactivate your account? All of your data will be
+									permanently removed. This action cannot be undone.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+					<button type="button"
+						class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-green-500 text-base font-medium text-white hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 sm:ml-3 sm:w-auto sm:text-sm"
+						onclick="modalClose('main-modal')">
+						Aceptar
+					</button>
+					<!-- <button type="button"
+						class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+						Cancel
+					</button> -->
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div class="bg-black text-white text-center text-sm py-12">
 		<p>Copyright &copy;
 			<script>
@@ -133,6 +215,34 @@
 			Soportec.
 		</p>
 	</div>
+
+	<script>
+		all_modals = ['main-modal']
+		all_modals.forEach((modal) => {
+			const modalSelected = document.querySelector('.' + modal);
+			// modalSelected.classList.remove('fadeIn');
+			// modalSelected.classList.add('fadeOut');
+			// modalSelected.style.display = 'none';
+			modalSelected.classList.add('hidden');
+		})
+		const modalClose = (modal) => {
+			const modalToClose = document.querySelector('.' + modal);
+			// modalToClose.classList.remove('fadeIn');
+			// modalToClose.classList.add('fadeOut');
+			// setTimeout(() => {
+			// 	modalToClose.style.display = 'none';
+			// }, 500);
+			modalToClose.classList.add('hidden');
+		}
+
+		const openModal = (modal) => {
+			const modalToOpen = document.querySelector('.' + modal);
+			// modalToOpen.classList.remove('fadeOut');
+			// modalToOpen.classList.add('fadeIn');
+			// modalToOpen.style.display = 'flex';
+			modalToOpen.classList.remove('hidden');
+		}
+	</script>
 </body>
 
 </html>
