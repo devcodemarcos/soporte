@@ -21,6 +21,6 @@
     "autoprefixer": "^10.2.6",
     "compass-mixins": "^0.12.10",
     "postcss": "^8.3.2",
-    "tailwindcss": "^2.1.4"
+    "tailwindcss": "^2.2.2"
   }
 }
